@@ -1,42 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Ajith kumar's web page</title>
         <style>
-            #page {
-                width: 50%;
-                margin: 0 auto;
-                
+            .parent {
+                background-color: blue;
+                width: 300px;
+                height: 350px;
             }
-           #content {
-            width: 60%;
-            float: left;
-            margin-right:5%;
-           }    
-           #home {
-            width: 35%;
-            float: right;
-           }
+            .child {
+                background-color: green;
+                width: 150px;
+                height: 150px;
+            }
+            .parent:hover.child{
+               transform: translateX(100%); 
+            }
         </style>
     </head>
     <body>
-        <div id="page">
-            <div id="content">
-            <h1>float input</h1>
-            <p>This beautiful festival brings prosperity. Hindu merchants open new account books on Diwali. Furthermore, they also pray for success and prosperity. People also buy new clothes for themselves and for others.This light festival brings peace to people. It brings the light of peace to the heart. Diwali certainly brings spiritual calmness to people. Sharing joy and happiness is another spiritual benefit of Diwali. People visit each other’s houses during this festival of lights. They do happy communication, eat good meals, and enjoy fireworks.Finally, to sum it up, Diwali is a great joyful occasion in India. One cannot imagine the delightful contribution of this glorious festival. It is certainly one of the greatest festivals in the world.</p>
-            </div>
-            <div id="home">
-                <h1>Home</h1>
-                <ul>
-                    <li> <a href="home">home</li>
-                    <li> <a href="about" >about</li>
-                    <li> <a href="width">width</li>
-                    <li> <a href="html">html</li>          
-                </ul>
-            </div>
-            <div id="footer">
-                <p>&copy;copy rights get handed</p>
-            </div>
+        <div class="parent">
+            <div class="child"></div>
         </div>
     </body>
 </html>    
