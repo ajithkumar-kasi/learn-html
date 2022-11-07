@@ -1,15 +1,14 @@
-let FirstName="Ajith";//String
+let number1=30;
+let number2=50;
 
-let age=21;//integer
+console.log(number1+number2)
+console.log(number1*number2)
+console.log(number1-number2)
+console.log(number1/number2)
+console.log(number1%number2)
+console.log(number1**number2)
 
-let Areyouvirgin=true;//boolean
 
-let LastName=undefined;//undefined
 
-let tropy=null;//null
-
-alert(FirstName);
-alert(age);
-alert(LastName);
-alert(Areyouvirgin);
-alert(tropy);
+console.log(number1++)
+console.log(--number2)
