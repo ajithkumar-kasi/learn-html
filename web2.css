@@ -1,1 +1,222 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image:url(./eduford_img/background.jpg); */
+  
+    background: url(./nature.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav img{
+    width: 200px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+
+}
+nav ul li a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav ul li a::after{
+    color: cadetblue;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%; 
+}
+.hero{
+    color: rgba(135, 14, 61, 0.841);
+    width: 90% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.hero h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.hero p{
+    width: 100%;
+    padding: 20px 20%;
+    font-size: 20px;
+    line-height: 25px; 
+}
+.hero .button{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(135, 14, 61, 0.841);
+    border: 1px solid rgba(135, 14, 61, 0.841);
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero .button:hover{
+    border: 1px solid orangered;
+    background-color: orangered;
+    color: white;
+    transition: 1s;
+}
+@media(max-width:700px){
+     .hero h1{
+        font-size: 20px;
+        padding-top: 50%;
+     }
+     nav ul li{
+        display: block;
+     }
+     
+     nav ul li{
+        position: relative;
+        background-color: green;
+        top: 0;
+        right: 0;   
+     }
+}
+.about{
+    width: 100%;
+    padding: auto;
+    background-color: darkgray;
+    color: white;
+}
+
+#image{
+    width: auto;
+    height: 400px;
+}
+.content{
+    width: 700px ;
+}
+.topic{
+    width: 1600px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.content p{
+    font-size: 20px;
+    line-height: 25px;
+    width: 100%;
+
+}
+#button{
+    border: 1px solid white;
+    width: 300px;
+    padding: 10px 5px ;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    background-color:darkgray;
+    color:white;
+    border-radius: 30px;
+}
+#button:hover{
+    background-color: darkseagreen;
+    color: lightcoral;
+}
+@media(max-width:700px){
+    #image{
+        width: 100px;
+        height: 100px;
+    }
+    .topic{
+        width: 100%;
+        display: block;
+        font-size: 20px;
+    }
+}
+
+.service{
+    width: 100%;
+    padding: 100px 0;
+    background-color: darkslategrey;
+}
+.title{
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.box{
+    display: flex;
+    min-height: 400px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 400px;
+    width: 335px;
+    padding: 20px 35px;
+    background-color: rgb(31, 25, 31);
+    color: white;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center
+
+}
+h5{
+    font-size: 25px;
+    color: cadetblue;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 30px;
+}
+.button a {
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 13px 30px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgba(225, 230, 208, 0.921);
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .4s;
+   
+}
+.button a:hover{
+    color: brown;
+    background-color: white;
+}
 
