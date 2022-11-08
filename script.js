@@ -1,12 +1,16 @@
-let hour=14;
+let savingamount=0;
 
-if(hour>=0 && hour<=13)
-    console.log("good morning");
-
-else if(hour>=13 && hour<=17)
-   console.log("goog afternoon");
-
-else
-    console.log("Good evening");
+if(savingamount>10000){
+    console.log("Buy Anroid Mobile");
+}
+else if(savingamount>60000){
+    console.log("Buy Iphone Mobile");
+}
+else if(5000 >10000){
+    console.log("Buy Baic Mobile");
+}
+else{
+    console.log("You can't afford mobile phone now");
+}
 
 
