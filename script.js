@@ -1,12 +1,12 @@
-const  readprmission=4;
-const  writeprmission=5;
-const executepermission=3;
+let hour=14;
 
-mypermission=1;
+if(hour>=0 && hour<=13)
+    console.log("good morning");
 
-mypermission=mypermission | executepermission
+else if(hour>=13 && hour<=17)
+   console.log("goog afternoon");
 
-let message=(mypermission & writeprmission)?'yes' : "no";
+else
+    console.log("Good evening");
 
-console.log(message);
 
