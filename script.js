@@ -1,14 +1,12 @@
-let number1=30;
-let number2=50;
+const  readprmission=4;
+const  writeprmission=5;
+const executepermission=3;
 
-console.log(number1+number2)
-console.log(number1*number2)
-console.log(number1-number2)
-console.log(number1/number2)
-console.log(number1%number2)
-console.log(number1**number2)
+mypermission=1;
 
+mypermission=mypermission | executepermission
 
+let message=(mypermission & writeprmission)?'yes' : "no";
 
-console.log(number1++)
-console.log(--number2)
+console.log(message);
+
