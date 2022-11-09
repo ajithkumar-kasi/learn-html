@@ -1,3 +1,5 @@
 const items=["apple","lemon","green","orange"]
 
-console.log(items.indexOf("yellow"));
+items.pop()
+
+console.log(items);
