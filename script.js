@@ -1,5 +1,16 @@
-const items=["apple","lemon","green","orange"]
+const students = [
+    {id:5,name:"Ajith"},   
+    {id:4,name:"Durai"},
+    {id:8,name:"Chella"},
+    {id:1,name:"Selvi"}
+];
 
-items.shift()
+students.sort((a,b)=>{
+    if (a.id<b.id) return -1;
 
-console.log(items);
+    if (a.id>b.id) return 1;
+
+    return 0;
+});
+
+console.log(students);
