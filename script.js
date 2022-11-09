@@ -1,11 +1,12 @@
-const items=[1,20,30,27,3,5,8];
+const persons=[
+    {id:1,first_name:"ajith",last_name:"kumar"},
+    {id:2,first_name:"gopi",last_name:"nath"},
+    {id:3,first_name:"dhila",last_name:"haris"},
+];
+let final=persons.map(function(value){
+    return [value.first_name, value.last_name] .join(" ");
+}
+   
+);
 
-let evennumbers=items.filter(function(value){
-    return value%2==0;
-});
-let oddnumbers=items.filter(function(value){
-    return value%2==1;
-});
-
-console.log(evennumbers);
-console.log(oddnumbers);
+console.log(final);
