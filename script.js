@@ -1,5 +1,5 @@
 const items=["apple","lemon","green","orange"]
 
-items.pop()
+items.shift()
 
 console.log(items);
