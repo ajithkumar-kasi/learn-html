@@ -1,16 +1,11 @@
-const students = [
-    {id:5,name:"Ajith"},   
-    {id:4,name:"Durai"},
-    {id:8,name:"Chella"},
-    {id:1,name:"Selvi"}
-];
+const items=[1,20,30,27,3,5,8];
 
-students.sort((a,b)=>{
-    if (a.id<b.id) return -1;
-
-    if (a.id>b.id) return 1;
-
-    return 0;
+let evennumbers=items.filter(function(value){
+    return value%2==0;
+});
+let oddnumbers=items.filter(function(value){
+    return value%2==1;
 });
 
-console.log(students);
+console.log(evennumbers);
+console.log(oddnumbers);
