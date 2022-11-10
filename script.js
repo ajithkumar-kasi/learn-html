@@ -1,5 +1,10 @@
 var array=[1,2,3,4,5];
 
-let result=array.slice();
+let tempaArray=[];
 
-console.log(result);
+
+for(let i=0;i<array.length;++i){
+   tempaArray=array;
+}
+
+console.log(tempaArray);
