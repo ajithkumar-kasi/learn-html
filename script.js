@@ -1,10 +1,12 @@
-var array=[1,2,3,4,5];
+function addNoDeclaration(){
+    console.log("Adding no from Func.declaration");
+};
+addNoDeclaration();
 
-let tempaArray=[];
 
 
-for(let i=0;i<array.length;++i){
-   tempaArray=array;
-}
+let addNoExpression=function(){
+    console.log("Adding no from Func.declaration");
+};
 
-console.log(tempaArray);
+addNoExpression();
