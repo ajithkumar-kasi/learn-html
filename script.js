@@ -1,12 +1,10 @@
-function addNoDeclaration(){
-    console.log("Adding no from Func.declaration");
-};
-addNoDeclaration();
+let tiffen=60;
+let lunch=100;
+let petrol=100;
 
-
-
-let addNoExpression=function(){
-    console.log("Adding no from Func.declaration");
+function sumExpense(){
+    result=tiffen+lunch+petrol;
+    console.log(`your total expense is: ${result}`);
 };
 
-addNoExpression();
+sumExpense();
