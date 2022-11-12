@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 #banner{
-    background: linear-gradient(rgba(0,0,0,0.5),rgb(101, 250, 250)), url(./Barber_Shop_img/banner.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5),rgb(101, 250, 250)), url(./images/banner.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -109,13 +109,18 @@ nav ul li a{
 #feature{
     width: 100%;
     padding: 70px 0;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  
+    
 }
 .title-text{
     text-align: center;
     padding-bottom: 70px;
 }
 .title-text p{
-    margin:20px;
+    margin-top:30px;
     font-size: 20px;
     color: #009688;
     font-weight: bold;
@@ -124,7 +129,7 @@ nav ul li a{
     display: inline-block;
 }
 .title-text p::after{
-    content: '';
+    content: "";
     width: 50px;
     height: 35px;
     background:linear-gradient(#019587,#fff);
@@ -138,4 +143,64 @@ nav ul li a{
 }
 .title-text h1{
     font-size: 50px;
+}
+.feature-box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#man{
+    width: auto;
+    height: 400px;
+    margin-left: 100px;
+    border-radius: 50px;
+}
+.feature-text{
+   margin-left: 500px ;
+   margin-top: 300px;
+   position: absolute;
+}
+#services{
+    width: 100%;
+    padding: 70px 0;
+    background:#009688;
+}
+
+.service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+
+}
+.single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-service img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+
 }
