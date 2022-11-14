@@ -1,4 +1,4 @@
-var array=[1,2,34,5,6];
-array.push(4)
-console.log(array);
+var array =["a","b","c","d"]
 
+let result=array.indexOf("d");
+console.log(result);
