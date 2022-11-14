@@ -1,4 +1,10 @@
-var array =["a","b","c","d"]
+var items=["milk","bread","sugar"];
 
-let result=array.indexOf("d");
-console.log(result);
+function check(){
+    if(items.indexOf("milk")==-1){
+        console.log("Item doesn't exist");
+    }else{
+        console.log("item exist");
+    }
+}
+check("milk");
