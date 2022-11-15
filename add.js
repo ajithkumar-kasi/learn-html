@@ -1,6 +1,4 @@
-const num1=parseInt(prompt("Enter the number:"));
-const num2=parseInt(prompt("Enter the number:"));
+const number= prompt("Enter your number:");
 
-const sum=num1 +num2;
-
-console.log(`the sum of ${num1} and ${num2} is:${sum}`);
+let result=Math.sqrt(number);
+console.log(`the squareroot of ${number} is: ${result}`);
