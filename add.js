@@ -1,7 +1,12 @@
-const baseValue=prompt("Enter the base value:");
-const heightValue=prompt("Enter the height value:");
+let a=prompt("enter the value:");
+let b=prompt("enter the value:");
+
+let temp;
+
+temp=a;
+a=b;
+b=temp;
 
 
-const areaValue=(baseValue*heightValue) / 2;
-
-console.log(`the area of triangle is:${areaValue}`);
+console.log(`the value of a after swapping:${a}`);
+console.log(`the value of b after swapping:${b}`);
