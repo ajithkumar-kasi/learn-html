@@ -3,7 +3,41 @@ class student1
 	public int rollno;
 	public String name;
 	public String course;
-	public int m1,m2,m3;
+	private int m1,m2,m3;
+	
+	public int getm1()
+	{
+		return m1;		
+	}
+	public void setm1(int mark1)
+	{
+		if(mark1>0)
+			m1=mark1;
+		else
+			m1=0;
+	}
+	public int getm2()
+	{
+		return m2;		
+	}
+	public void setm2(int mark2)
+	{
+		if(mark2>0)
+			m2=mark2;
+		else
+			m2=0;
+	}
+	public int getm3()
+	{
+		return m3;		
+	}
+	public void setm3(int mark3)
+	{
+		if(mark3>0)
+			m3=mark3;
+		else
+			m3=0;
+	}
 	
 	public String details()
 	{
@@ -34,9 +68,9 @@ public class student {
 	public static void main(String[] args) {
 		
 		student1 s=new student1();
-		s.m1=80;
-		s.m2=70;
-		s.m3=55;
+		s.setm1(100);
+		s.setm2(75);
+		s.setm3(55);
 		s.course="Artificial Intelligence";
 		s.name="Ajith Kumar.K";
 		s.rollno=1;
