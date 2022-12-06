@@ -7,13 +7,13 @@ public class exception {
 		try {
 			int a,b,c;
 			a=60;
-			b=2;
+			b=0;
 			c=a/b;
 			System.out.println("the result is:"+c);
 
 		}
 		catch(ArithmeticException e) {
-			System.out.println("Dividing by zero");
+			System.out.println("Dividing by zero"+e);
 		}
 		
 	}
