@@ -1,4 +1,10 @@
-
+/**
+ * 
+ */
+/**
+ * @author Ajith
+ *
+ */
 package mypack1;
 
 
@@ -15,7 +21,32 @@ class Demo1
         System.out.println(a+b+c+d);
     }
 }
+/*Public class Demo2()
+{
+    Demo1 d=new Demo1();
+    public void show()
+    {
+        System.out.println(d.a+d.b+d.c+d.d);
+    }
+    
+}*/
+class Demo3 extends Demo1
+{
+    Demo1 d=new Demo1();
+    public void show()
+    {
+        System.out.println(d.a+d.b+d.c+d.d);
+    }
+}
 
+class Demo4 extends Demo1
+{
+    public void show()
+    {
+        System.out.println(a+b+c+d);
+    }
+}
+    
 
 public class MyPack1 {
 
