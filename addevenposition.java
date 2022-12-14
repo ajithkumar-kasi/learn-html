@@ -13,13 +13,19 @@ public class addevenposition {
 		}
 		System.out.println(" ");
 		
-		System.out.println("The odd positions of Array: ");
+		/*System.out.println("The odd positions of Array: ");
 		for(int i=0;i<a.length;i=i+2)
 		{	
 				System.out.print(a[i]+" ");	
 			
-		}
+		}*/
 		
+		System.out.println("The even positions of Array: ");
+		for(int i=1;i<a.length;i=i+2)
+		{	
+				System.out.print(a[i]+" ");	
+			
+		}
 		
 		
 		
