@@ -105,7 +105,41 @@ public class defaultt {
 						System.out.print(dup[j]+" ");
 				}
 			}
+			System.out.println(" ");
+			
+			System.out.println(" ******************************");
+			
 		
+			//odd position
+			
+			int odd[]= {1,2,3,4,2,6,3,84,1};
+			System.out.println("original array");
+			for(int i:odd)
+				System.out.print(i+" ");
+		
+			System.out.println(" ");
+
+			for(int i=0;i<odd.length-1;i=i+2) {
+				System.out.print(odd[i]+" ");
+			}
+			System.out.println(" ");
+			
+			System.out.println(" ******************************");
+			
+			
+           //even position
+			
+			int even[]= {1,2,3,4,2,6,3,84,1};
+			System.out.println("original array");
+			for(int i:even)
+				System.out.print(i+" ");
+		
+			System.out.println(" ");
+
+			for(int i=1;i<even.length-1;i=i+2) {
+				System.out.print(even[i]+" ");
+			}
+	
 	
 			
 	}
