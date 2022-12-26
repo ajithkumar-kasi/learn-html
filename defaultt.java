@@ -71,19 +71,40 @@ public class defaultt {
 		
 		//reverse
 		
-	int c[]= {1,2,3,4,5,6,7,8,9,10};
+		int c[]= {1,2,3,4,5,6,7,8,9,10};
 		System.out.println("original array");
 		for(int i:c)
 			
 		System.out.print(i+" ");
-		
-		
 		System.out.println(" ");
+		System.out.println("revrese array");
+		
+		
+		
 			for(int i=c.length-1;i>=0;i--) {
 				System.out.print(c[i]+" ");
 			}
-				
+			
+			System.out.println(" ");
+			
+			System.out.println(" ******************************");
+			
+			
+			//duplicate elements
+			
+			
+			int dup[]= {1,2,3,4,2,6,3,84,1};
+			System.out.println("original array");
+			for(int i:dup)
+				System.out.print(i+" ");
 		
+			System.out.println(" ");
+			for(int i = 0;i<dup.length;i++) {
+				for(int j=i+1;j<dup.length;j++) {
+					if(dup[i]==dup[j])
+						System.out.print(dup[j]+" ");
+				}
+			}
 		
 	
 			
