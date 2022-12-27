@@ -139,9 +139,69 @@ public class defaultt {
 			for(int i=1;i<even.length-1;i=i+2) {
 				System.out.print(even[i]+" ");
 			}
+			
+			
+
+			System.out.println(" ");			
+			System.out.println(" ******************************");
+			
+			
+			//largest number
+			
+			
+			int l[]= {1,2,3,54,6,7,5,47,9};
 	
+			System.out.println("original array");
+			for(int i:l)
+				System.out.print(i+" ");
+		
+			System.out.println(" ");
+
+			int temp=a[0];
+			for(int i=0;i<l.length;i++) {
+
+					if(l[i]>temp) {
+						temp=l[i];
+					}
+				
+				}
+			System.out.print("the largest number: "+temp);
+			
+			System.out.println(" ");			
+			System.out.println(" ******************************");
+			
+			
+			
+			//2ndlargest number
+			int max1,max2;
+			max1=max2= l[0];
+			for(int i=0;i<l.length;i++) {	
+						if(l[i]>max1) {
+							max2=max1;
+							max1=l[i];
+							}
+						else if(l[i]>max2) {
+							max2=l[i];
+						
+					
+				}
+			}
+			System.out.println("the 2nd largestnumber:"+ max2);
+	
+			System.out.println(" ");
+			
+			System.out.println(" ******************************");
+			
 	
 			
-	}
+			
+			
+			
+				}				
+			
+			
+			
+			
+	
 
 }
