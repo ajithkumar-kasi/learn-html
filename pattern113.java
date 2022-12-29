@@ -14,12 +14,13 @@ public class pattern113 {
 	       { 
 	    	   for (j = size; j > i; j--)
 	    	   {  
-	               System.out.print(" ");  
-	           }  
-	           for (k = 0; k < (2 * i - 1); k++)
+	               System.out.print("1 ");  
+	           } 
+	    	   for (k = 0; k < (2 * i - 1); k++)
 	           {  
-	               System.out.print("*");  
-	           }  
+	               System.out.print("* ");  
+	           } 
+	           
 	           System.out.println();  
 	         }  
 	   }  
