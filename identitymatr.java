@@ -7,7 +7,7 @@ public class identitymatr {
 
 		boolean flag=true;
 		int a[][]= {
-				{1,0,1},
+				{1,0,0},
 				{0,1,0},
 				{0,0,1}
 		};
@@ -17,6 +17,8 @@ public class identitymatr {
 		if(r!=c) {
 			System.out.println("The given matrix is not square matrix");
 		}
+		
+		
 		else {
 			for(int i=0;i<r;i++) {
 				for(int j=0;j<c;j++) {
@@ -25,7 +27,7 @@ public class identitymatr {
 						flag=false;
 						break;
 					}
-					if(i!=j && a[i][j]!=0) {
+					else if(i!=j && a[i][j]!=0) {
 						flag=false;
 						break;
 					}
