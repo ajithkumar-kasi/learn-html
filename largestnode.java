@@ -20,7 +20,7 @@ public class largestnode {
 	      //Represent the root of binary tree  
 	      public Node root;  
 	  
-	      public LargestNode(){  
+	      public largestnode(){  
 	        root = null;  
 	      }  
 	  
