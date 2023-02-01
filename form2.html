@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 2</title>
+    <style>
+        
+        .content{
+            
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .one{
+            margin: 30px;
+            width: 35%;
+            padding: 30px;
+            height: 500px;
+            font-size: 20px;
+            
+        }
+        .two{
+            font-size: 20px;
+            margin: 30px;
+            width: 45%; 
+            padding: 30px;
+           line-height: 30px;
+            border: 1px solid white;
+            border-radius: 30px;
+            box-shadow: 5px 5px 20px 20px grey;
+        }
+        .two #name ,#mail ,#password{
+            width: 60%;
+            height: 30px;
+        }
+        #submit{
+            width: 90%;
+            height: 30px;
+            margin-left:30px ;
+            font-size: 20px;
+            font-weight: lighter;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="one">
+            <h2>Stripe</h2>
+            <input type="checkbox" id="choose">Get started quickly
+            <p>Integrete with developer-friendly APIs or choose low- code pr pre-built solutions</p>
+            <input type="checkbox" id="choose">Support any business model
+            <p>Eicommerce,subscriptions,Saas platforms,marketplaces,and mote within a unfired platform</p>
+
+            <input type="checkbox" id="choose">Join millions of businesses
+            <p>Integrete with developer-friendly APIs or choose low- code pr pre-built solutions</p>
+
+
+        </div>
+
+        <div class="two">
+            <form action="">
+                <h1>
+                    Create your Stripe account
+                </h1>
+                <label for="mail">Email</label><br>
+                <input type="email" id="mail" ><br><br>
+                
+                <label for="name">Full name</label><br>
+                <input type="text" id="name"><br><br>
+                
+                <label for="country">Country</label><br>
+                <select id="country">
+                    <option>--Select Country--</option>
+                    <option>India</option>
+                    <option>England</option>
+                    <option>Pakisthan</option>
+                    <option>USA</option>
+                    <option>Newsland</option>
+                    <option>Austrelia</option>
+                    <option>South africa</option>
+                    <option>Ireland</option>
+                    <option>Srilanka</option>
+                    <option>Bangladesh</option>
+                    <option>WestIndies</option>
+                </select><br><br>
+                
+                <label for="password">Password</label><br>
+                <input type="password" id="password" width=><br><br>
+
+                <input type="checkbox" id="final" required>Integrete with developer-friendly APIs or choose low- code pre-built solutions<br>
+            
+                <button type="submit" id="submit">Create account</button>
+
+
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
