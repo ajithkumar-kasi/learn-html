@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <style>
+        h1{
+            color: red;
+        }
+        .content{
+            background-color: greenyellow;
+            border: 1px solid red;
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form action="">
+            <div class="person">
+
+                <h1>
+                    Personal Details
+                </h1>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br><br>
+                <label for="Password">Password:</label>
+                <input type="Password" id="Password" required><br><br>
+                <label for="mail">E-mail id:</label>
+                <input type="email" id="mail" required><br><br>
+                <label for="name">Gender:</label>
+                <input type="radio" id="gender">Male
+                <input type="radio" id="gender">Female<br><br>
+                <label for="num">Contact No:</label>
+                <input type="number" id="num" required>
+            </div>
+            
+            <div class="education">
+
+                <h1>Educational Qualification</h1>
+                <label for="degree">Degree:</label>
+                <select>
+                    <option id="degree">--Select Group--</option>
+                    <option id="degree">B.E</option>
+                    <option id="degree">B.Tech</option>
+                    <option id="degree">B.Sc</option>
+                    <option id="degree">B.A</option>
+                </select><br><br>
+                <label for="Course">Engineering:</label>
+                <select>
+                    <option id="Course" >--Select Group--</option>
+                    <option id="Course">CSE</option>
+                    <option id="Course">ECE</option>
+                    <option id="Course">Mech</option>
+                    <option id="Course">Civil</option>
+                </select><br><br>
+                <label>Hobbies:</label>
+                <input type="checkbox" id="hobbie">Playing Chess
+                <input type="checkbox" id="hobbie">Reading Books
+    
+            </div>
+
+           <div class="address">
+            <h1>Address</h1>
+            <textarea type="textarea" rows="5" cols="30"></textarea><br><br>
+
+            <label for="resume">Attach Resume</label>
+            <input type="file" id="resume" required> <br><br>
+
+            <input type="submit" >
+           </div>
+
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
