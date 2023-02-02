@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web design-2</title>
+    <style>
+        body{
+            margin: 0;
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            height: 100vh;
+            background-color:gainsboro;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background-color: aqua;
+            font-size: 10px;
+            position: sticky;
+        }
+        .one{
+            display: flex;
+            margin: 10px;
+            justify-content: space-around;
+        }
+        #p1{
+            padding-left: 20px;
+        }
+        #logo{
+            width: 200px;
+            margin: 50px;
+            border-radius: 50px;
+            
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        ul li a:hover{
+            color: black;
+
+        } 
+        ul li{
+            list-style:none ;
+            display: inline-block;
+            margin: 30px;
+            font-size: 20px;
+            position: relative;
+            
+        }
+        ul li::after{
+            content: '';
+            border-bottom: 5px solid red;
+            border-radius: 50px;
+            width: 0;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+
+        }
+        ul li:hover::after{
+            width: 100%;
+
+        }
+        @media screen and (max-width:500px) {
+            ul li{
+                font-size: 20px;
+                display: block;
+            }
+            #logo{
+                border-radius: 10px;
+                width: 50px;
+                height: 50px;
+                
+            }
+            
+        }
+       
+      
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="one">
+                <p>One-step Cleaning services</p>
+                <p id="p1">Mon-Fri 8.00PM-5.30PM</p></div>
+            <div class="two">
+                <p><img src="../whatsapp-1844471__340.webp" id="whats">8122269641</p>
+            </div>
+        </div>
+        <div class="main">
+            <img src="./logo.jpg" id="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="buttton"><a href="#">Get Started</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
