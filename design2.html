@@ -31,11 +31,12 @@
             padding-left: 20px;
         }
         #logo{
-            width: 200px;
+            width: 100px;
             margin: 50px;
             border-radius: 50px;
             
         }
+        
         .main{
             display: flex;
             justify-content: space-between;
@@ -70,6 +71,29 @@
             width: 100%;
 
         }
+        .main2{
+            width: 100%;
+            margin-top: 10%;
+            text-align: center;
+        }
+        button{
+            width: 200px;
+            text-align: center;
+            height: 50px;
+            margin: 10px;
+            font-size: 20px;
+            font-style: oblique;
+            border-radius: 20px;
+            box-shadow: inset 5px 5px green;
+        }
+        .one a{
+            text-decoration: none;
+        }
+        .two a{
+            text-decoration: none;
+        }
+       
+
         @media screen and (max-width:500px) {
             ul li{
                 font-size: 20px;
@@ -77,8 +101,8 @@
             }
             #logo{
                 border-radius: 10px;
-                width: 50px;
-                height: 50px;
+                width: 80px;
+                height: 80px;
                 
             }
             
@@ -92,10 +116,11 @@
     <div class="content">
         <div class="header">
             <div class="one">
-                <p>One-step Cleaning services</p>
-                <p id="p1">Mon-Fri 8.00PM-5.30PM</p></div>
+                <p><a href="#">One-step Cleaning services</a></p>
+                
+                <p id="p1"><a href="#">Mon-Fri  8.00PM-5.30PM</a></p></div>
             <div class="two">
-                <p><img src="../whatsapp-1844471__340.webp" id="whats">8122269641</p>
+                <p><img src="../whatsapp-1844471__340.webp" id="whats"><a href="#">8122269641</a></p>
             </div>
         </div>
         <div class="main">
@@ -108,8 +133,15 @@
                 <li id="buttton"><a href="#">Get Started</a></li>
             </ul>
 
-        </div>
 
+        </div>
+        <div class="main2">
+        <h1>WE CLEAN YOUR KITCHEN</h1>
+        
+            <button type="button">Introduction</button>
+            <button type="button">Explore Searches</button>
+        </div>
+        
     </div>
     
 </body>
