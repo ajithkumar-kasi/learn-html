@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design 1</title>
+    <style>
+        body{
+            background-color: aqua;
+            width: 100%;
+            
+          
+        }
+        img{
+            width: 200px;
+            height: auto;
+            border-radius: 100px;
+            margin: 30px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        ul li{
+            display: inline-block;
+            list-style: none;
+            font-size: 20px;
+            margin:20px ;
+            position: relative;
+
+        }
+        ul li a{
+            text-decoration: none;
+            text-transform: uppercase;
+            
+        }
+        ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: green;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+            border-radius: 10px;
+        }
+        ul li:hover::after{
+            color: red;
+            position: absolute;
+            width: 100%;  
+        }  
+        .content{
+        
+            width: 100%;
+            position: absolute;
+            top:40%;
+            
+           text-align: center;
+        }
+        button{
+            width: 200px;
+            padding: 10px;
+            font-size: 20px;
+            border: 2px solid white;
+            background-color: transparent;
+            border-radius: 10px;
+            margin: 10px;
+        }
+      
+        button::after{
+            content: '';
+            width: 200px;
+            padding: 10px;
+            background-color: gray;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="./ak logo.jpg">
+        
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+        </div>
+        <div class="content">
+            <h1>Design your house</h1>
+            <p>Subscribe Easy titorials Youtube Channel to watch more videos,press the bell icon to get more latest updates</p>
+            <button type="button"><span></span>watch more</button>
+            <button type="button"><span></span>Subscribe</button>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
