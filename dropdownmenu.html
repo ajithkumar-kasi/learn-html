@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Menu</title>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+       
+        ul li{
+          
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            float: right;
+            list-style: none;
+            border: 1px solid green;
+            line-height: 30px;
+            margin: 2px;
+            background-color: aqua;
+            
+     
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            display: block;
+
+        }
+        ul li a:hover{
+            background-color: orange;
+        }
+        ul li ul li{
+            display: none;
+            
+        }
+        ul li:hover ul li{
+            display: block;
+         
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Dropdown menu</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">service</a>
+            <ul>
+                <li><a href="#">india</a></li>
+                <li><a href="#">england</a></li>
+                <li><a href="#">Srilanka</a></li>
+            </ul></li>
+        
+        <li><a href="#">Kitchen</a></li>
+        <li><a href="#">About us</a></li>
+    </ul>
+</body>
+</html>
