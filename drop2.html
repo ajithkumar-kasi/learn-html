@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drop2</title>
     <style>
-        body{
+        *{
             margin: 0;
             padding: 0;
-            background-color: blue;
+        }
+        body{
+            
+            background-color: rgb(118, 174, 211);
         }
         img{
             width: 100px;
@@ -30,7 +33,7 @@
             float: left;
             margin-top: 40px;
             border: 1px solid black;
-            transform: skew(-25deg);
+         
             box-shadow: 1px 5px 5px white;
             transition: all 0.5s linear;
             position: relative;
@@ -41,7 +44,7 @@
             display: block;
             text-decoration: none;
             color:white;
-            transform: skew(25deg);
+          
           
             
         }
@@ -73,12 +76,37 @@
         margin: 0;
         border: none;
        
-       
-
-       }
+       } 
+      
        ul li ul li:hover{
         background-color: gray;
         transform: none;
+       }
+       .content{
+        display: flex;
+        justify-content: center;
+       }
+       #photo{
+        width: 300px;
+        height: auto;
+        border-radius: 0 40px ;
+        box-shadow: 10px 10px 55px white;
+       }
+       h1{
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 35px;
+
+       }
+       p{
+        margin-top: 10px;
+       }
+       .two{
+        width: 500px;
+        margin: 50px;
+        padding: 30px;
+        line-height: 35px;
+        font-size: 25px;
+       
        }
 
     </style>
@@ -101,6 +129,16 @@
             </li>
             <li><a href="#">bill</a></li>
         </ul>
+    </div>
+    <div class="content">
+        <img src="./employee.jpg" id="photo">
+        <div class="two">
+            <h1>
+                Mr.Ajithkumar Kasi
+            </h1>
+            <p>My name is Maciek, and I’m a career writer. My job is to provide job seekers with expert advice on career-related topics. I read a lot and consult recruiting professionals so you don’t have to. I show you how to hack the recruitment process, create a job-winning resume, ace the job interview, and... introduce yourself, among others.</p>
+        </div>
+
     </div>
     
 </body>
