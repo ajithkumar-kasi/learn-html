@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drop2</title>
     <style>
-        *{
+        body{
             margin: 0;
             padding: 0;
+            background-color: blue;
         }
         img{
             width: 100px;
@@ -18,7 +19,7 @@
 
         }
         .div{
-            background-color: blue;
+         
             display: flex;
             justify-content: space-between;
             text-align: center;    
@@ -31,7 +32,8 @@
             border: 1px solid black;
             transform: skew(-25deg);
             box-shadow: 1px 5px 5px white;
-            transition: all 2s linear;
+            transition: all 0.5s linear;
+            position: relative;
         }
       
         ul li a{
@@ -39,7 +41,7 @@
             display: block;
             text-decoration: none;
             color:white;
-              transform: skew(25deg);
+            transform: skew(25deg);
           
             
         }
@@ -53,7 +55,27 @@
         ul li:last-child{
             border-radius: 0 10px 10px 0;
         }
+       ul li ul li{
+        display: none;
+       
+       }
+       ul li ul {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+       }
 
+       ul li:hover ul li{
+        display: inline;
+        margin: 0;
+        border: none;
+       
+
+       }
+       ul li ul li:hover{
+        background-color: gray;
+       }
 
     </style>
 </head>
@@ -64,7 +86,15 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">contact</a></li>
-            <li><a href="#">status</a></li>
+            <li><a href="#" id="one">status</a>
+                <ul>
+                    <li><a href="#">Read</a></li>
+                    <li><a href="#">Apply</a></li>
+                    <li><a href="#">Send</a></li>
+                    <li><a href="#">Viewed</a></li>
+                    <li><a href="#">Action</a></li>
+                </ul>
+            </li>
             <li><a href="#">bill</a></li>
         </ul>
     </div>
