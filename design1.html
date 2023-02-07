@@ -14,9 +14,10 @@
         }
         img{
             width: 200px;
-            height: auto;
+            height: 200px;
             border-radius: 100px;
             margin: 30px;
+
         }
         .header{
             display: flex;
@@ -71,6 +72,7 @@
             position: relative;
             color: aliceblue;
             font-size: 20px;
+            box-shadow: 2px 2px;
             
         }
       
@@ -93,6 +95,20 @@
         }
         button:hover{
             border: none;
+        }
+                    
+        @media screen and (min-width:500px) {
+            body{
+                width: 100%;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            li{
+                font-size: 10px;
+            }
+            
         }
     </style>
 </head>
