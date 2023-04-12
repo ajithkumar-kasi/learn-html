@@ -4,99 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Confirmation </title>
-    <style>
-        *{
-            margin: 0;
-            width: 100%;
-            box-sizing: border-box;
-            
-        }
-        body{
-            
-            background-color: cadetblue;
-            
-        }
-        .form{
-            background-color: azure;
-            width: 400px;
-            height: auto;
-            padding: 40px;
-            position: absolute;
-            transform: translate(-50%,-50%);
-            top: 50%;
-            left: 50%
-            ;border-radius: 20px; 
-        }
-        label{
-            font-size: 20px;
-            color:black
-            ;
-            font-weight: 700;
-        }
-        input{
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid black;
-            border-radius: 10px;
-        }
-        input[type="password"]{
-            font-size: 20px;
-        }
-        input[type="button"]{
-            margin-top: 10px;
-            background-color: cadetblue;
-            border: none;
-            border-radius: 20px;
-            padding: 20px;
-            font-size: 20px;
-        }#msg{
-            font-size: 20px;
-            margin-top: 15px ;
-            padding: 5px 0;
-            width: 100%;
-            display: inline;
-            font-weight: 700;
-            
-        }
-
-
-    </style>
-    <script>
-        function check() {
-            let password=document.getElementById("password").value;
-            let confirm=document.getElementById("cnfrm-password").value;
-
-            let text=document.getElementById("msg");
-            if(password.length !=0){
-                if(password == confirm){
-                    text.textContent="Password matches";
-                    text.style.color="green";
-                }else{
-                    text.textContent="Password doesn't match";
-                    text.style.color="red";
-                }
-            }else{
-                alert("Please enter the password");
-            }
-        }
-    </script>
+    <title>Figma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
 </head>
 <body>
-    <form class="form">
-        <label for="password">
-            Password
-        </label>
-        <input type="password" id="password" placeholder="enter the password">
-        <label for="cnfrm-password">
-           Confirm Password
-        </label>
-        <input type="password" id="cnfrm-password" placeholder="re-enter the password">
-        <p id="msg"></p>
-        <input type="button" onclick="check()" value="Submit">
-    </form>
+    <div class="container1">
+        <div class="navbar">
+            <div class="icon">
+                <h1>EstatePro</h1>
+                <nav>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Blog</a></li>                
+                </nav>
+                    
+            </div>
+            <div class="button1">
+            <button id="button1">Get started &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="main1">
+            <div class="main12 " style="width: 800px;" >
+                <h1>The Best Place To Find Your <span>Best House</span> </h1>
+            </div>
+            <div class="main12" id="main" style="width: 500px;" >
+                <p  id="p1">
+                    WE Are Real Estate Agency That Will help You Designing you a Modern And Minimaist Dream House.Let's Discuss.
+                   
+                </p>
+                <input type="button" value="Get in Touch">
+                <div class="products">
+                    <p id="product">1200<span style="color: orangered;">+</span><br>Premium Product</p>
+                    <p id="product">4500<span style="color: orangered;">+</span><br> Happy Customer</p>
+                    <p id="product">240<span style="color: orangered;">+</span><br>Award Winning</p>
+            
+                </div>
+            </div>
+            
+
+        </div>
+        <img src="./home.jpg">
+        <div class="search">
+            <form action="#">
+                <i class='fas fa-map-marker-alt'></i>
+                <input  type="search"  placeholder="Search by location" id="search">
+                <input type="button" value="Search Now" id="submit">
+                </form>
+        </div>
+        
+    </div>
+    <div class="main2">
+        <p>Trusted by</p>
+        <ul>
+            <li ><a href="www.facebook.com"><img src="facebook.png" alt="symbol"></a></li>
+            <li id="youtube" ><a href="www.youtube.com"><img src="youtube1.png"></a></li>
+            <li><a href="www.pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i>Pinterest</a></li>
+            <li id="webflow"><a href="www.webflow.com"></i><img src="webflow1.png" alt="symbol"></a></li>
+            <li id="google"><a href="www.google.com"><img src="google1.png" alt="symbol"></a></li>
+        </ul>
+    </div>
+    
+    
+    
     
 </body>
 </html>
